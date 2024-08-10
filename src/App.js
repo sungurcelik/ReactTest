@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+
+/**
+ * Her react componenti bir JS fonksiyonudur
+ * JSX yazımı kullanılır
+ * JSX içerisinde direkt olarak JS kodları yazabiliriz.
+ * {} içerisine yazılması yeterlidir
+ * 
+ * jsx'te class yerine className kullanılır
+ * style yazarken obje şeklinde yazılır
+ */
 
 function App() {
+  let kendiAdim = "Salih"
+
+  const pStyle = {
+    color: "red",
+    fontSize: "35px",
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <Header />
+      <p style={pStyle}>Benim adım {kendiAdim}</p>
+    </div >
   );
 }
 
