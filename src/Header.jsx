@@ -8,6 +8,7 @@
 // JS fonksiyonu baş harfi büyük
 
 import Button from "./Button";
+import Button2 from "./Button2";
 function Header() {
   //içerisinde JSX return etme
   return (
@@ -21,9 +22,11 @@ function Header() {
         <a href="">İletişim</a>
       </nav>
       <div>
-        <Button buttonText={"Kullanıcı Girişi"} />
+        {/* <Button buttonText={"Kullanıcı Girişi"} />
         <Button buttonText={"Yönetici Girişi"} />
-        <Button buttonText={"Kayıt Ol"} />
+        <Button buttonText={"Kayıt Ol"} /> */}
+        <Button2 buttonTitle = {"Kullanici Girişi"} buttonColor={"greenyellow"}/>
+        <Button2 buttonTitle = {"Yönetici Girişi"} buttonColor={'orangered'} />
       </div>
     </header>
   );

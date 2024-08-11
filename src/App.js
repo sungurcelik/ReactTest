@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
+import Form from './Form';
 
 /**
  * Her react componenti bir JS fonksiyonudur
@@ -9,6 +10,7 @@ import Header from './Header';
  * {} içerisine yazılması yeterlidir
  * 
  * jsx'te class yerine className kullanılır
+ * for yerine htmlFor kullanılır
  * style yazarken obje şeklinde yazılır
  */
 
@@ -22,7 +24,7 @@ function App() {
   return (
     <div>
       <Header />
-      <p style={pStyle}>Benim adım {kendiAdim}</p>
+      <Form />
     </div >
   );
 }

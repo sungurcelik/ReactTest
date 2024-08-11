@@ -1,17 +1,16 @@
-const Button = (props) => {
+const Button = ({buttonText}) => {
+  
+  const buttonStyle = {
+    backgroundColor:
+      buttonText === "Kullanıcı Girişi"
+        ? "greenyellow"
+        : buttonText === "Yönetici Girişi"
+        ? "orangered"
+        : "yellow",
+  };
   return (
-    <div
-      className="user-login"
-      style={{
-        backgroundColor:
-          props.buttonText === "Kullanıcı Girişi"
-            ? "greenyellow"
-            : props.buttonText === "Yönetici Girişi"
-            ? "orangered"
-            : "yellow",
-      }}
-    >
-      {props.buttonText}
+    <div className="user-login" style={buttonStyle}>
+      {buttonText}
     </div>
   );
 };
